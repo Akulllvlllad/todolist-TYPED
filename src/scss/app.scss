@@ -1,0 +1,55 @@
+@import './libs/normalize';
+@import '../components/СreationTasks/ReactSelect.scss';
+
+#root {
+	position: relative;
+	overflow: hidden;
+}
+
+.App {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 5%;
+	grid-row-gap: 0px;
+	padding: 20px 0 0 0;
+	position: relative;
+
+	&-main {
+		grid-area: 1 / 4 / 2 / 13;
+		overflow: hidden;
+	}
+	&-header {
+		grid-area: 1 / 1 / 2 / 4;
+	}
+}
+
+.wrapper-MOD {
+	background-color: black;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+}
+
+.alerts {
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	animation: myAnimation 1s ease 0s 2 alternate running;
+}
+
+@keyframes myAnimation {
+	from {
+		bottom: -50px;
+	}
+	to {
+		bottom: 0px;
+	}
+}
+
