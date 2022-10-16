@@ -1,4 +1,4 @@
-# todolist-TYPED
+# What did I use?
 A simple application for simple zemteki using React, redux toolkit and TypeScript extending the capabilities of JavaScript.
 
 
